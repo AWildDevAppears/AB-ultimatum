@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+}
+
+.map {
+    background-color: green;
+    margin: 0 0 -30px -30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 60px);
+}
+
+button {
+    flex: calc(33% - 15px) 0 0;
+    margin: 7.5px;
+    position: relative;
+}
+
+button span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}

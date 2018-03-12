@@ -1,0 +1,22 @@
+{
+    "weapon_carving_knife": {
+        "name": "Carving knife",
+        "description": "A sharp carving knife",
+        "role": "weapon",
+        "dmgMin": 3,
+        "dmgMax": 5,
+        "value": 20
+    },
+    "item_fork": {
+        "name": "Fork",
+        "description": "A utensil used for picking up food",
+        "role": "junk",
+        "value": 2
+    },
+    "item_spatula": {
+        "name": "Spatula",
+        "description": "It's just a spatula",
+        "role": "junk",
+        "value": 2
+    }
+}

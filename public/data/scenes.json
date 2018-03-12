@@ -1,0 +1,199 @@
+{
+    "scene_default_my_house_front_door": {
+        "body": [
+            "You stand in your living room next to the front door, looking into the room you examine your home.",
+            "You live in a small apartment, you have done ever since you started working for Landslide Inc, a subsidiary to Gaunt tech.",
+            "It's cramped, small and way too expensive for what it is but it is where you call home", 
+            "it has to be really, it's not like you'd have a chance buying anything else, housing in the city is so expensive if you don't work for Gaunt Tech."
+        ],
+        "canMove": true,
+        "actions": [
+            {
+                "text": "Go outside",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_front_door_out"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_living_mid": {
+        "body": [
+            "You stand next to your couch, it's definitely seen better days, judging by the tears and staining on the fabric.",
+            "Your couch has been with you since the day you moved in, it's been a good companion for the last couple of years, seeing you through a lot of boring evenings.",
+            "In front of your couch is your entertainment center, it's not particularly impressive, but it serves the purpose of helping you catch up with whats going on in the world",
+            "and providing you with entertainment."
+        ],
+        "canMove": true,
+        "actions": [
+            {
+                "text": "Sit on the couch",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_living_mid_on_couch"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_bathroom": {
+        "body": [
+            "You stand in your bathroom, you see your sink, bath and toilet, above the sink hangs a mirror. The walls are a mottled off-white and the floor is tiled in a cream color."
+        ],
+        "canMove": true,
+        "actions": [
+            {
+                "text": "Wash face",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bathroom_no_water"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_kitchen": {
+        "body": [
+            "You stand in your bathroom, you see your sink, bath and toilet, above the sink hangs a mirror. The walls are a mottled off-white and the floor is tiled in a cream color."
+        ],
+        "canMove": true,
+        "actions": [
+            {
+                "text": "Search cupboards",
+                "action": "LOOT",
+                "options": {
+                    "containerId": "inv_my_house_kitchen_cupboards"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_bedroom": {
+        "body": [
+            "You stand in your bedroom, your reasonably sized bed sits against the wall. On the other side of the room is your closet."
+        ],
+        "canMove": true,
+        "actions": [
+            {
+                "text": "Sleep for 8 hours",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bedroom_sleep_8",
+                    "time": 480
+                }
+            },
+            {
+                "text": "Nap",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bedroom_sleep_2",
+                    "time": 120
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_bedroom_sleep_8": {
+        "body": [
+            "You go to sleep"
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Wake up",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bedroom"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_bedroom_sleep_2": {
+        "body": [
+            "You take a quick nap"
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Wake up",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bedroom"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_bathroom_no_water": {
+        "body": [
+            "You turn the tap, but nothing happens. You then remember that your water has been cut as you didn't pay your rent."
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Oh, yeah...",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_bathroom"
+                }
+            }
+        ]
+    },
+    "scene_default_my_house_living_mid_on_couch": {
+        "body": [
+            "You are sitting on the couch."
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Get up",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_living_mid"
+                }
+            },
+            {
+                "text": "Stay sat down a little longer",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_living_mid_on_couch_loop",
+                    "time": 30
+                }
+            }
+        ] 
+    },
+    "scene_default_my_house_living_mid_on_couch_loop": {
+        "body": [
+            "You rest a little longer, you are still sitting on the couch."
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Get up",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_living_mid"
+                }
+            },
+            {
+                "text": "Stay sat down a little longer",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_living_mid_on_couch_loop",
+                    "time": 30
+                }
+            }
+        ] 
+    },
+    "scene_default_my_house_front_door_out": {
+        "body": [
+            "You can't leave yet, you still have things to do"
+        ],
+        "canMove": false,
+        "actions": [
+            {
+                "text": "Oh, Okay",
+                "action": "NEXT_SCENE",
+                "options": {
+                    "scene": "scene_default_my_house_front_door"
+                }
+            }
+        ] 
+    }
+    
+}

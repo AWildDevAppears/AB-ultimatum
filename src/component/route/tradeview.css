@@ -1,0 +1,73 @@
+.trade-view.wrapper {
+    height: calc(100vh - 80px);
+}
+
+.trade-footer {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.panel-view {
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.panel {
+    flex: 50% 0 0;
+    margin: 1rem 0;
+}
+
+.panel + .panel {
+    border-left: 1px solid red;
+}
+
+.panel-view__gap {
+    width: 80px;
+}
+
+.panel__heading,
+.panel__body {
+    background-color: #333;
+}
+
+.panel__heading {
+    float: left;
+    padding: 10px 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.panel__side-heading {
+    text-align: right;
+    padding: 10px 15px;
+}
+
+.panel__body {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.panel__body--no-scroll {
+    overflow-y: hidden;
+}
+
+.panel__item {
+    background-color: #CCC;
+    color: #333;
+    padding: 15px;
+    height: 60px;
+    border-bottom: 1px solid #333;
+}
+
+.panel__footer {
+    background-color: #CCC;
+    color: #333;
+    padding: 15px;
+    height: 100%;
+}
+
+.panel__footer h2 {
+    margin-top: 1rem;
+}
+

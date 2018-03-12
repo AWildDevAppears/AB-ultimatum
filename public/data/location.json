@@ -1,0 +1,95 @@
+{
+    "my_house_front_door": {
+        "name": "My house - front door",
+        "toNorth": {
+            "id": "my_house_living_mid",
+            "travel": 1
+        },
+        "toWest": {
+            "id": "my_house_bathroom",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_front_door"
+            ]
+        }
+    },
+
+    "my_house_living_mid": {
+        "name": "My house - living room",
+        "toNorth": {
+            "id": "my_house_living_back",
+            "travel": 1
+        },
+        "toWest": {
+            "id": "my_house_bedroom",
+            "travel": 1
+        },
+        "toSouth": {
+            "id": "my_house_front_door",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_living_mid"
+            ]
+        }
+    },
+
+    "my_house_living_back": {
+        "name": "My house - back of the living room",
+        "toWest": {
+            "id": "my_house_kitchen",
+            "travel": 1
+        },
+        "toSouth": {
+            "id": "my_house_living_mid",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_front_door"
+            ]
+        }
+    },
+
+    "my_house_bathroom": {
+        "name": "My house - bathroom",
+        "toEast": {
+            "id": "my_house_front_door",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_bathroom"
+            ]
+        }
+    },
+
+    "my_house_bedroom": {
+        "name": "My house - bedroom",
+        "toEast": {
+            "id": "my_house_living_mid",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_bedroom"
+            ]
+        }
+    },
+
+    "my_house_kitchen": {
+        "name": "My house - kitchen",
+        "toEast": {
+            "id": "my_house_living_back",
+            "travel": 1
+        },
+        "scenes": {
+            "random": [
+                "scene_default_my_house_kitchen"
+            ]
+        }
+    }
+}
