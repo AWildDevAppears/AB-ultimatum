@@ -1,0 +1,14 @@
+{
+    "inv_my_house_kitchen_cupboards": {
+        "name": "Kitchen cupboard",
+        "isEphemaral": false,
+        "maxItems": 12,
+        "inventory": [
+            "weapon_carving_knife",
+            "item_fork",
+            "item_fork",
+            "item_fork",
+            "item_spatula"
+        ]
+    }
+}
